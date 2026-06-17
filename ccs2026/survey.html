@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CPH - Copenhagen Card Study 2026</title>
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <link
+      rel="stylesheet"
+      href="https://survalyzereu.blob.core.windows.net/public/assets/font-awesome.css"
+    />
+   
+    <link rel="stylesheet" type="text/css" href="https://files.survalyzer.eu/public/dependency/fontawesome-free/v5/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://files.survalyzer.eu/public/dependency/devextreme/latest/css/dx.light.css" />
+    <link rel="stylesheet" type="text/css" href="https://files.survalyzer.eu/public/dependency/styleguide/latest/assets/default/rt-theme.min.css" />
+
+    <link href="css/postal-code-search-box.css" rel ="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <survalyzer-survey
+      surveyhash="irnlqyzjqj"
+      tenant="silverlining"
+    ></survalyzer-survey>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://files.survalyzer.eu/public/dependency/jquery/latest/jquery.min.js"></script>
+    <script src="https://files.survalyzer.eu/public/dependency/bootstrap/v4/js/bootstrap.bundle.min.js"></script>
+    <script src="https://files.survalyzer.eu/public/dependency/embedded/release/survalyzer-survey.js"></script>
+
+
+
+    <script src="data/flight_list.js"></script>
+    <script src="data/arrival_airline.js"></script>
+    <script src="data/arrival_airport.js"></script>
+
+    <script src="data/airport_list.js"></script>
+    <script src="data/city_list.js"></script>
+    <script src="data/postal_code_DK.js"></script>
+    <script src="data/postal_code_SE.js"></script>
+    
+    <script src="scripts/flight_search.js"></script>
+    <script src="scripts/arrival_airline_search.js"></script>
+    <script src="scripts/arrival_airport_search.js"></script>
+    <script src="scripts/airport_search.js"></script>
+    <script src="scripts/city_search.js"></script>
+    <script src="scripts/airport_search.js"></script>
+    <script src="scripts/postal_code_search.js"></script>
+    
+    <script>
+        window.addEventListener('load', function () {
+        setTimeout(() => {
+          const listSearchHandler = () => {
+            console.log("Current Page Index: ", api.fn.getCurrentPageIndex() );
+            
+            if (api.fn.getCurrentPageIndex() ===2) { 
+              show_flight_search_box();
+            } else {
+              hide_flight_search_box();
+            }
+
+            if (api.fn.getCurrentPageIndex() ===6) { 
+              show_arrival_airport_search_box();
+            } else {
+              hide_arrival_airport_search_box();
+            }
+
+            if (api.fn.getCurrentPageIndex() ===8) { 
+              show_arrival_airline_search_box();
+            } else {
+              hide_arrival_airline_search_box();
+            }
+
+
+            if (api.fn.getCurrentPageIndex() ===12) { 
+              show_airport_search_box();
+            } else {
+              hide_airport_search_box();
+            }
+
+            if (api.fn.getCurrentPageIndex() ===15) { 
+              show_city_search_box();
+            } else {
+              hide_city_search_box();
+            }
+
+            if (api.fn.getCurrentPageIndex() ===25) { 
+              show_postal_code_search_box();
+            } else {
+              hide_postal_code_search_box();
+            }
+          }
+          
+          api.events.subscribe('next', listSearchHandler);
+          api.events.subscribe('back', listSearchHandler);
+          api.events.subscribe('startedOrContinued', listSearchHandler);
+        });
+      });
+    </script>
+</body>
+</html>

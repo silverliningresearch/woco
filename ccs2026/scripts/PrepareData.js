@@ -165,30 +165,19 @@ function prepareInterviewData() {
     // if ((quota_month== currentMonth) && (quota_data_temp[i].Quota>0))
     if ( (quota_data_temp[i].Quota>0))
     {
-      if (currentMonth == "07-2024") 
-        {
-          if ((quota_data_temp[i].Dest == "SOF")) {
-            quota_data_temp[i].Quota = Math.round(30);
-          }
+      if ( quota_data_temp[i].Country == "France") {
+        quota_data_temp[i].Quota = Math.round(quota_data_temp[i].Quota);
+      }
 
-          if ((quota_data_temp[i].Dest == "ADD")) {
-            quota_data_temp[i].Quota = Math.round(50);
-          }
+      if ( quota_data_temp[i].Country == "Spain") {
+        quota_data_temp[i].Quota = Math.round(quota_data_temp[i].Quota);
+      }
 
-          if ((quota_data_temp[i].Airport_Airline == "ZRH-SK")) {
-            quota_data_temp[i].Quota = Math.round(50);
-          }
+      if ( quota_data_temp[i].Country == "Spain") {
+        quota_data_temp[i].Quota = Math.round(quota_data_temp[i].Quota);
+      }
 
-          if ((quota_data_temp[i].Airport_Airline == "BOD-EJU")) {
-            quota_data_temp[i].Quota = Math.round(40);
-          }
-
-          if ((quota_data_temp[i].Airport_Airline == "IAS-W4")) {
-            quota_data_temp[i].Quota = Math.round(quota_data_temp[i].Quota*2);
-          }
-        }
-
-    quota_data.push(quota_data_temp[i]);
+      quota_data.push(quota_data_temp[i]);
     }
   }
   //get relevant interview data

@@ -5,7 +5,7 @@
   "Airport_Airline": "CDG-AF",
   "Dest": "CDG",
   "AirlineCode": "AF",
-  "Quota": 49.0
+  "Quota": 51.0
  },
  {
   "Country": "France",
@@ -26,7 +26,7 @@
   "Airport_Airline": "CDG-D8",
   "Dest": "CDG",
   "AirlineCode": "D8",
-  "Quota": 13.0
+  "Quota": 14.0
  },
  {
   "Country": "France",
@@ -40,7 +40,7 @@
   "Airport_Airline": "NCE-D8",
   "Dest": "NCE",
   "AirlineCode": "D8",
-  "Quota": 26.0
+  "Quota": 27.0
  },
  {
   "Country": "France",
@@ -54,7 +54,7 @@
   "Airport_Airline": "BVA-FR",
   "Dest": "BVA",
   "AirlineCode": "FR",
-  "Quota": 11.0
+  "Quota": 12.0
  },
  {
   "Country": "France",
@@ -75,7 +75,7 @@
   "Airport_Airline": "CDG-SK",
   "Dest": "CDG",
   "AirlineCode": "SK",
-  "Quota": 31.0
+  "Quota": 33.0
  },
  {
   "Country": "France",
@@ -96,14 +96,14 @@
   "Airport_Airline": "NCE-SK",
   "Dest": "NCE",
   "AirlineCode": "SK",
-  "Quota": 32.0
+  "Quota": 33.0
  },
  {
   "Country": "France",
   "Airport_Airline": "ORY-TO",
   "Dest": "ORY",
   "AirlineCode": "TO",
-  "Quota": 10.0
+  "Quota": 11.0
  },
  {
   "Country": "France",
@@ -124,7 +124,7 @@
   "Airport_Airline": "BER-D8",
   "Dest": "BER",
   "AirlineCode": "D8",
-  "Quota": 13.0
+  "Quota": 15.0
  },
  {
   "Country": "Germany",
@@ -138,63 +138,63 @@
   "Airport_Airline": "BER-EJU",
   "Dest": "BER",
   "AirlineCode": "EJU",
-  "Quota": 9.0
+  "Quota": 10.0
  },
  {
   "Country": "Germany",
   "Airport_Airline": "DUS-EW",
   "Dest": "DUS",
   "AirlineCode": "EW",
-  "Quota": 11.0
+  "Quota": 12.0
  },
  {
   "Country": "Germany",
   "Airport_Airline": "FRA-LH",
   "Dest": "FRA",
   "AirlineCode": "LH",
-  "Quota": 40.0
+  "Quota": 44.0
  },
  {
   "Country": "Germany",
   "Airport_Airline": "MUC-LH",
   "Dest": "MUC",
   "AirlineCode": "LH",
-  "Quota": 24.0
+  "Quota": 26.0
  },
  {
   "Country": "Germany",
   "Airport_Airline": "BER-SK",
   "Dest": "BER",
   "AirlineCode": "SK",
-  "Quota": 24.0
+  "Quota": 27.0
  },
  {
   "Country": "Germany",
   "Airport_Airline": "DUS-SK",
   "Dest": "DUS",
   "AirlineCode": "SK",
-  "Quota": 14.0
+  "Quota": 15.0
  },
  {
   "Country": "Germany",
   "Airport_Airline": "FRA-SK",
   "Dest": "FRA",
   "AirlineCode": "SK",
-  "Quota": 9.0
+  "Quota": 10.0
  },
  {
   "Country": "Germany",
   "Airport_Airline": "HAJ-SK",
   "Dest": "HAJ",
   "AirlineCode": "SK",
-  "Quota": 5.0
+  "Quota": 6.0
  },
  {
   "Country": "Germany",
   "Airport_Airline": "HAM-SK",
   "Dest": "HAM",
   "AirlineCode": "SK",
-  "Quota": 15.0
+  "Quota": 16.0
  },
  {
   "Country": "Germany",
@@ -208,14 +208,14 @@
   "Airport_Airline": "STR-SK",
   "Dest": "STR",
   "AirlineCode": "SK",
-  "Quota": 9.0
+  "Quota": 10.0
  },
  {
   "Country": "Germany",
   "Airport_Airline": "MUC-VL",
   "Dest": "MUC",
   "AirlineCode": "VL",
-  "Quota": 14.0
+  "Quota": 16.0
  },
  {
   "Country": "Italy",
@@ -698,21 +698,21 @@
   "Airport_Airline": "LHR-BA",
   "Dest": "LHR",
   "AirlineCode": "BA",
-  "Quota": 30.0
+  "Quota": 32.0
  },
  {
   "Country": "United Kingdom",
   "Airport_Airline": "EDI-D8",
   "Dest": "EDI",
   "AirlineCode": "D8",
-  "Quota": 9.0
+  "Quota": 10.0
  },
  {
   "Country": "United Kingdom",
   "Airport_Airline": "LGW-D8",
   "Dest": "LGW",
   "AirlineCode": "D8",
-  "Quota": 28.0
+  "Quota": 29.0
  },
  {
   "Country": "United Kingdom",
@@ -733,7 +733,7 @@
   "Airport_Airline": "BRS-EZY",
   "Dest": "BRS",
   "AirlineCode": "EZY",
-  "Quota": 5.0
+  "Quota": 6.0
  },
  {
   "Country": "United Kingdom",
@@ -747,7 +747,7 @@
   "Airport_Airline": "LGW-EZY",
   "Dest": "LGW",
   "AirlineCode": "EZY",
-  "Quota": 5.0
+  "Quota": 6.0
  },
  {
   "Country": "United Kingdom",
@@ -768,7 +768,7 @@
   "Airport_Airline": "EDI-FR",
   "Dest": "EDI",
   "AirlineCode": "FR",
-  "Quota": 9.0
+  "Quota": 10.0
  },
  {
   "Country": "United Kingdom",
@@ -782,7 +782,7 @@
   "Airport_Airline": "STN-FR",
   "Dest": "STN",
   "AirlineCode": "FR",
-  "Quota": 24.0
+  "Quota": 25.0
  },
  {
   "Country": "United Kingdom",
@@ -817,7 +817,7 @@
   "Airport_Airline": "BHX-SK",
   "Dest": "BHX",
   "AirlineCode": "SK",
-  "Quota": 3.0
+  "Quota": 4.0
  },
  {
   "Country": "United Kingdom",
@@ -831,7 +831,7 @@
   "Airport_Airline": "LHR-SK",
   "Dest": "LHR",
   "AirlineCode": "SK",
-  "Quota": 33.0
+  "Quota": 34.0
  },
  {
   "Country": "United Kingdom",
@@ -845,14 +845,14 @@
   "Airport_Airline": "PHL-AA",
   "Dest": "PHL",
   "AirlineCode": "AA",
-  "Quota": 13.0
+  "Quota": 14.0
  },
  {
   "Country": "United States",
   "Airport_Airline": "JFK-DL",
   "Dest": "JFK",
   "AirlineCode": "DL",
-  "Quota": 16.0
+  "Quota": 17.0
  },
  {
   "Country": "United States",
@@ -866,63 +866,63 @@
   "Airport_Airline": "ATL-SK",
   "Dest": "ATL",
   "AirlineCode": "SK",
-  "Quota": 15.0
+  "Quota": 17.0
  },
  {
   "Country": "United States",
   "Airport_Airline": "BOS-SK",
   "Dest": "BOS",
   "AirlineCode": "SK",
-  "Quota": 19.0
+  "Quota": 21.0
  },
  {
   "Country": "United States",
   "Airport_Airline": "EWR-SK",
   "Dest": "EWR",
   "AirlineCode": "SK",
-  "Quota": 19.0
+  "Quota": 21.0
  },
  {
   "Country": "United States",
   "Airport_Airline": "IAD-SK",
   "Dest": "IAD",
   "AirlineCode": "SK",
-  "Quota": 19.0
+  "Quota": 20.0
  },
  {
   "Country": "United States",
   "Airport_Airline": "JFK-SK",
   "Dest": "JFK",
   "AirlineCode": "SK",
-  "Quota": 19.0
+  "Quota": 21.0
  },
  {
   "Country": "United States",
   "Airport_Airline": "LAX-SK",
   "Dest": "LAX",
   "AirlineCode": "SK",
-  "Quota": 19.0
+  "Quota": 21.0
  },
  {
   "Country": "United States",
   "Airport_Airline": "ORD-SK",
   "Dest": "ORD",
   "AirlineCode": "SK",
-  "Quota": 19.0
+  "Quota": 21.0
  },
  {
   "Country": "United States",
   "Airport_Airline": "SEA-SK",
   "Dest": "SEA",
   "AirlineCode": "SK",
-  "Quota": 12.0
+  "Quota": 13.0
  },
  {
   "Country": "United States",
   "Airport_Airline": "SFO-SK",
   "Dest": "SFO",
   "AirlineCode": "SK",
-  "Quota": 22.0
+  "Quota": 24.0
  }
 ]    
 `;

@@ -20,6 +20,15 @@ var total_hard_quota;
 
 var less_than_2_flights_list;
 var less_than_6_flights_list;
+
+var Germany_completed;
+var Italy_completed;
+var Spain_completed;
+var UK_completed;
+var USA_completed;
+var France_completed;
+
+
 /************************************/
 /************************************/
 function initCurrentTimeVars() {
@@ -206,24 +215,6 @@ function prepareInterviewData() {
        }
     }
   }
-
-  //prepare flight list
-  
-  //>>Special treat for ET-VIE which will be used for ET-ADD as well
-  var flight_list_temp_1 = [];
-  for (i = 0; i < flight_list_temp.length; i++) {
-    let flight = flight_list_temp[i];
-    flight_list_temp_1.push(flight);
-
-    if ((flight.Dest == "VIE") && ((flight.AirlineCode == "ET"))) {
-      const temp_flight = JSON.parse(JSON.stringify(flight));
-      temp_flight.Dest = "ADD";
-      temp_flight.DestName = "ADDIS ABABA BOLE (via Vienna)";
-      flight_list_temp_1.push(temp_flight);
-    }
-  }
-  flight_list_temp = flight_list_temp_1;
-  //<<Special treat for ET-VIE which will be used for ET-ADD as well
 
   //empty the list
   today_flight_list = [];

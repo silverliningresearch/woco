@@ -10,21 +10,19 @@ function CalculateAirportAirLineReport() {
   total_completed = 0;
   total_quota_completed = 0;
 
-  var dest_list = ['LHR','AMS','CDG','DOH','DXB','IST','ATL','FRA','MUC','VIE','ZRH','SIN',
-'BOS','PEK','AUH','BKK','BRU','DEL','HEL','IAD','JFK','KEF','ORD','YYZ','SEA','MSP','ICN','PVG',
-'ARN','OSL','BEG','LGW','LIS','MAD','WAW','PHL','ADD','BCN','DUB','FCO',];
+  Germany_completed = 0;
+  Italy_completed= 0; 
+  Spain_completed= 0; 
+  UK_completed= 0;
+  USA_completed= 0; 
+  France_completed= 0;
 
-  //check what not belong to quota data
+//check what not belong to quota data
   var found_temp = 0;
   var not_in_quota_list =[];
   for (i = 0; i < interview_data.length; i++) 
   {
     total_completed = total_completed + interview_data[i].completed_interviews;
-
-    // if (dest_list.includes(interview_data[i].Dest.toUpperCase())) 
-    // { 
-    //   total_quota_completed = total_quota_completed + interview_data[i].completed_interviews*1;
-    // }
 
     found_temp = 0;
     for (j = 0; j < quota_data.length; j++) 
@@ -37,6 +35,7 @@ function CalculateAirportAirLineReport() {
 
     }
     if (found_temp==0) not_in_quota_list.push(interview_data[i]);
+
   }
   console.log("not_in_quota_list: ", not_in_quota_list);
 
@@ -50,21 +49,36 @@ function CalculateAirportAirLineReport() {
       }
     }
 
+
     row.Difference = row.Completed -  row.Quota;
     row.Difference_percent =(100*(row.Difference/row.Quota)).toFixed(1);
     row.Prioritisation_score = row.Difference_percent*row.Difference/100;
 
     row.Completed_percent =(100*(row.Completed/row.Quota)).toFixed(0);
         
-    // if ( row.Difference > 0) { //over quota
-    //   total_quota_completed = total_quota_completed +row.Quota*1;
-    // }
-    // else { //<= 0
-    //   if (row.Completed) {
-    //     total_quota_completed = total_quota_completed + row.Completed*1;
-    //   }
-    // }
+    if ( row.Country == "Germany") {
+      Germany_completed = Germany_completed +  row.Completed ;
+    }
 
+    if ( row.Country == "Italy") {
+      Italy_completed = Italy_completed +  row.Completed ;
+    }
+
+    if ( row.Country == "Spain") {
+      Spain_completed = Spain_completed +  row.Completed ;
+    }
+   
+    if ( row.Country == "United States") {
+      USA_completed = USA_completed +  row.Completed ;
+    }
+
+    if ( row.Country == "United Kingdom") {
+      UK_completed = UK_completed +  row.Completed ;
+    }
+
+    if ( row.Country == "France") {
+      France_completed = France_completed +  row.Completed ;
+    }
   }
 
   for (i = 0; i < daily_plan_data.length; i++) {//Flight_To_report.length;
@@ -82,8 +96,6 @@ function CalculateAirportAirLineReport() {
           row.Completed_percent = quota_data[j].Completed_percent;
           row.Prioritisation_score = quota_data[j].Prioritisation_score;
           daily_plan_data_temp.push(row);
-          
-
         }
       }
     }  

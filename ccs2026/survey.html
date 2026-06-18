@@ -22,7 +22,7 @@
 
   <body>
     <survalyzer-survey
-      surveyhash="irnlqyzjqj"
+      surveyhash="rdcikwzebu"
       tenant="silverlining"
     ></survalyzer-survey>
 
@@ -57,42 +57,12 @@
           const listSearchHandler = () => {
             console.log("Current Page Index: ", api.fn.getCurrentPageIndex() );
             
-            if (api.fn.getCurrentPageIndex() ===2) { 
+            if (api.fn.getCurrentPageIndex() ===1) { 
               show_flight_search_box();
             } else {
               hide_flight_search_box();
             }
 
-            if (api.fn.getCurrentPageIndex() ===6) { 
-              show_arrival_airport_search_box();
-            } else {
-              hide_arrival_airport_search_box();
-            }
-
-            if (api.fn.getCurrentPageIndex() ===8) { 
-              show_arrival_airline_search_box();
-            } else {
-              hide_arrival_airline_search_box();
-            }
-
-
-            if (api.fn.getCurrentPageIndex() ===12) { 
-              show_airport_search_box();
-            } else {
-              hide_airport_search_box();
-            }
-
-            if (api.fn.getCurrentPageIndex() ===15) { 
-              show_city_search_box();
-            } else {
-              hide_city_search_box();
-            }
-
-            if (api.fn.getCurrentPageIndex() ===25) { 
-              show_postal_code_search_box();
-            } else {
-              hide_postal_code_search_box();
-            }
           }
           
           api.events.subscribe('next', listSearchHandler);
